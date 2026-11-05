@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    background-color: #0f172a;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.botao{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 999px;
+    background-color: #00cc8f;
+    color: #05130d;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* LINHA MAGICA DO EXEMPLO:
+    diga quais propriedades trasicionam, tmepo e a curvaz. */
+    transition: transform 0.3s ease, /*Movimento suave */
+                box-shadow 0.3s ease;/*brilho acompanhado*/
+    
+}
+
+.botao:hover{
+    transform: translateY(-4);
+    box-shadow: 0 10px 22px rgba(0, 204, 143, 0.45);
+}
